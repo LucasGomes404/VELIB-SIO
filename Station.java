@@ -8,7 +8,7 @@ class Station extends Carte {
 	private String arrondissement;
 	private String numero;
 	private String date;
-	private String dispo;
+	private String cartedispo;
 	private String ouvert;
 	private int capacite;
 	private int nb_dispo;
@@ -16,12 +16,12 @@ class Station extends Carte {
 
 //Modificateur qui seront ulilisé pour les prochaines classes 
 	
-	public Station(String unArr, String unNom, String unNumero, String uneDate, String isDispo, String isOuvert, int laCapa, int nbDispo, int empDispo) {
+	public Station(String unArr, String unNom, String unNumero, String uneDate, String cbisDispo, String isOuvert, int laCapa, int nbDispo, int empDispo) {
 		this.arrondissement = unArr;
 		this.nom = unNom;
 		this.numero = unNumero;
 		this.date = uneDate;
-		this.dispo = isDispo;
+		this.cartedispo = cbisDispo;
 		this.ouvert = isOuvert;
 		this.capacite = laCapa;
 		this.nb_dispo = nbDispo;
@@ -32,7 +32,7 @@ class Station extends Carte {
 		return arrondissement;
 	}
 	
-	public String getAdresse() {
+	public String getNom() {
 		return nom;
 	}
 	
@@ -44,8 +44,8 @@ class Station extends Carte {
 		return date;
 	}
 	
-	public String getDisp() {
-		return dispo;
+	public String getCardDisp() {
+		return cartedispo;
 	}
 
 	public String getOuvert() {
@@ -56,7 +56,7 @@ class Station extends Carte {
 		return capacite;
 	}
 	
-	public int getDispo() {
+	public int getVDispo() {
 		return nb_dispo;
 	}
 	
@@ -67,7 +67,7 @@ class Station extends Carte {
 	@Override
 	public String toString() {
 		return "Station [arrondissement=" + arrondissement + ",nom=" + nom + ", numero="
-				+ numero + ",date=" + date + ",dispo=" + dispo + ", ouvert=" + ouvert + ",capacité=" + capacite + ",vélo dispo=" + nb_dispo + ",emplacement dispo=" + emp_dispo + "]";
+				+ numero + ",date=" + date + ",dispo=" + cartedispo + ", ouvert=" + ouvert + ",capacité=" + capacite + ",vélo dispo=" + nb_dispo + ",emplacement dispo=" + emp_dispo + "]";
 	}
 	
 }

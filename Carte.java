@@ -15,8 +15,8 @@ public class Carte {
 
 //Mise en place de l'ajout de la station
 	
-	public void ajouteStation(String codeStation, String unNom, String unArr, String uneDate, String isDispo, String isOuvert, int laCapa, int nbDispo, int empDispo) {
-		mesStations.add(new Station(codeStation, unNom, unArr, uneDate, isDispo, isOuvert, laCapa, nbDispo, empDispo));
+	public void ajouteStation(String codeStation, String unNom, String unArr, String uneDate, String cbisDispo, String isOuvert, int laCapa, int nbDispo, int empDispo) {
+		mesStations.add(new Station(codeStation, unNom, unArr, uneDate, cbisDispo, isOuvert, laCapa, nbDispo, empDispo));
 	}
 
 //Mise en place de la recherceh de stations 
@@ -42,4 +42,7 @@ public class Carte {
 		return mesStations.size();
 	}
 	
+	public ArrayList<Station> getTheStations() {
+		return mesStations;
+	}
 }
