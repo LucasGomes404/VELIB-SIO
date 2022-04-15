@@ -21,7 +21,7 @@ public class MyTableModel implements Initializable {
 	ObservableList<Station> list;
 	
 	@FXML
-	Label date, veloDispo, nbAcces, etatStation, attachDispo, nbDispo, adresse;
+	Label date, veloDispo, nbAcces, etatStation, attachDispo, carteDispo, adresse;
 	@FXML
 	TableColumn<Station, String> numeroStation, adresseStat, nbDispoStat, ouvert;
 	@FXML
@@ -68,7 +68,7 @@ public class MyTableModel implements Initializable {
 		nbAcces.setText("Nombre Total Attaches : " + String.valueOf(tableView.getSelectionModel().getSelectedItem().getCapacite()));
 		etatStation.setText("Station Ouvertes : " + tableView.getSelectionModel().getSelectedItem().getOuvert());
 		attachDispo.setText("Nombres Attaches Disponibles : " + String.valueOf(tableView.getSelectionModel().getSelectedItem().getEmplacement()));
-		nbDispo.setText("Station Paiment CB : " + tableView.getSelectionModel().getSelectedItem().getCardDisp());
+		carteDispo.setText("Station Paiment CB : " + tableView.getSelectionModel().getSelectedItem().getCardDisp());
 		
 		if(tableView.getSelectionModel().getSelectedItem().getOuvert().equals("OUI")) {
 			etatStation.setTextFill(Color.color(0, 1, 0));

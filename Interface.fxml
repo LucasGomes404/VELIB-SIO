@@ -120,8 +120,8 @@
             <Label id="nbAcces" fx:id="nbAcces" layoutX="7.0" layoutY="160.0" prefHeight="26.0" prefWidth="370.0" />
             <Label id="veloDispo" fx:id="veloDispo" layoutY="115.0" prefHeight="26.0" prefWidth="370.0" />
             <Label layoutX="462.0" layoutY="160.0" prefHeight="26.0" prefWidth="354.0" />
-            <Label layoutX="462.0" layoutY="111.0" prefHeight="26.0" prefWidth="354.0" />
-            <Label layoutX="462.0" layoutY="74.0" prefHeight="26.0" prefWidth="354.0" />
+            <Label id="attachDispo" layoutX="462.0" layoutY="111.0" prefHeight="26.0" prefWidth="354.0" />
+            <Label id="etatStation" fx:id="etatStation" layoutX="462.0" layoutY="74.0" prefHeight="26.0" prefWidth="354.0" />
          </children>
       </Pane>
       <TableView prefHeight="334.0" prefWidth="923.0">
