@@ -41,7 +41,7 @@ class Station extends Carte {
 	}
 	
 	public String getDate() {
-		return date;
+		return date.replaceAll("T", "à").substring(0, date.length()-4);	
 	}
 	
 	public String getCardDisp() {
