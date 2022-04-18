@@ -119,17 +119,17 @@
             <Label id="date" fx:id="date" layoutX="7.0" layoutY="74.0" prefHeight="26.0" prefWidth="370.0" />
             <Label id="nbAcces" fx:id="nbAcces" layoutX="7.0" layoutY="160.0" prefHeight="26.0" prefWidth="370.0" />
             <Label id="veloDispo" fx:id="veloDispo" layoutY="115.0" prefHeight="26.0" prefWidth="370.0" />
-            <Label layoutX="462.0" layoutY="160.0" prefHeight="26.0" prefWidth="354.0" />
-            <Label id="attachDispo" layoutX="462.0" layoutY="111.0" prefHeight="26.0" prefWidth="354.0" />
+            <Label id="carteDispo" fx:id="carteDispo" layoutX="462.0" layoutY="160.0" prefHeight="26.0" prefWidth="354.0" />
+            <Label id="attachDispo" fx:id="attachDispo" layoutX="462.0" layoutY="111.0" prefHeight="26.0" prefWidth="354.0" />
             <Label id="etatStation" fx:id="etatStation" layoutX="462.0" layoutY="74.0" prefHeight="26.0" prefWidth="354.0" />
          </children>
       </Pane>
-      <TableView prefHeight="334.0" prefWidth="923.0">
+      <TableView fx:id="tableView" prefHeight="334.0" prefWidth="923.0">
         <columns>
-          <TableColumn prefWidth="110.40002596378326" text="Numéro" />
-          <TableColumn prefWidth="459.20003509521484" text="Adresse" />
-            <TableColumn minWidth="0.0" prefWidth="192.0001220703125" text="Nombre Dispo" />
-            <TableColumn prefWidth="162.39990234375" text="Ouvert" />
+          <TableColumn id="numeroStation" fx:id="numeroStation" prefWidth="110.40002596378326" text="Numéro" />
+          <TableColumn id="adresseStat" fx:id="adresseStat" prefWidth="459.20003509521484" text="Adresse" />
+            <TableColumn id="nbDispoStat" fx:id="nbDispoStat" minWidth="0.0" prefWidth="192.0001220703125" text="Nombre Dispo" />
+            <TableColumn id="ouvert" fx:id="ouvert" prefWidth="162.39990234375" text="Ouvert" />
         </columns>
       </TableView>
    </children>
