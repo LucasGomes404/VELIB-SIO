@@ -19,7 +19,7 @@ public class JPasserelle {
 		String num_adresse = null;
 		
 		try {
-			String url = "https://opendata.paris.fr/api/records/1.0/search/?dataset=velib-disponibilite-en-temps-reel&q=&facet=name&facet=is_installed&facet=is_renting&facet=is_returning&facet=nom_arrondissement_communes";
+			String url = "https://opendata.paris.fr/api/records/1.0/search/?dataset=velib-disponibilite-en-temps-reel&q=&rows=-1&sort=name&facet=name&facet=is_installed&facet=is_renting&facet=is_returning&facet=nom_arrondissement_communes&facet=stationcode";
 			InputStream lien = new URL(url).openStream();
 			BufferedReader fichier = new BufferedReader(new InputStreamReader(lien, StandardCharsets.UTF_8));
 			JSONObject json = new JSONObject(fichier.readLine());
@@ -77,7 +77,7 @@ public class JPasserelle {
 					break;
 				}
 				
-				c.ajouteStation(stationcode, fields.getString("name"), num_adresse, fields.getString("duedate"), fields.getString("is_renting"), fields.getString("is_installed"), fields.getInt("capacity"), fields.getInt("nomdocksavailable"), fields.getInt("numbikesavailable"));
+				c.ajouteStation(stationcode, fields.getString("name"), num_adresse, fields.getString("duedate"), fields.getString("is_renting"), fields.getString("is_installed"), fields.getInt("capacity"), fields.getInt("numdocksavailable"), fields.getInt("numbikesavailable"));
 			}			
 		} catch (FileNotFoundException e) {
 			System.err.println("Erreur : Le fichier n'existe pas !\n" + e);

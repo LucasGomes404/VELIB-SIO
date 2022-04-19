@@ -13,11 +13,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="923.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyTableModel">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyTableModel">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="800.0" stylesheets="@application.css">
          <children>
-            <TitledPane animated="false" prefHeight="199.0" prefWidth="308.0" stylesheets="@application.css" text="Arrondissement">
+            <TitledPane animated="false" prefHeight="199.0" prefWidth="308.0" text="Arrondissement">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="209.0" prefWidth="306.0" stylesheets="@application.css">
                      <children>
