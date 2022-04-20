@@ -4,11 +4,11 @@ package application;
 
 class Station extends Carte {
 
-	private String nom;
+	private String adresse;
 	private String arrondissement;
 	private String numero;
 	private String date;
-	private String cartedispo;
+	private String carteDispo;
 	private String ouvert;
 	private int capacite;
 	private int nb_dispo;
@@ -18,10 +18,10 @@ class Station extends Carte {
 	
 	public Station(String unArr, String unNom, String unNumero, String uneDate, String cbisDispo, String isOuvert, int laCapa, int nbDispo, int empDispo) {
 		this.arrondissement = unArr;
-		this.nom = unNom;
+		this.adresse = unNom;
 		this.numero = unNumero;
 		this.date = uneDate;
-		this.cartedispo = cbisDispo;
+		this.carteDispo = cbisDispo;
 		this.ouvert = isOuvert;
 		this.capacite = laCapa;
 		this.nb_dispo = nbDispo;
@@ -33,7 +33,7 @@ class Station extends Carte {
 	}
 	
 	public String getNom() {
-		return nom;
+		return adresse;
 	}
 	
 	public String getNumero() {
@@ -45,7 +45,7 @@ class Station extends Carte {
 	}
 	
 	public String getCardDisp() {
-		return cartedispo;
+		return carteDispo;
 	}
 
 	public String getOuvert() {
@@ -66,8 +66,8 @@ class Station extends Carte {
 
 	@Override
 	public String toString() {
-		return "Station [arrondissement=" + arrondissement + ",nom=" + nom + ", numero="
-				+ numero + ",date=" + date + ",dispo=" + cartedispo + ", ouvert=" + ouvert + ",capacité=" + capacite + ",vélo dispo=" + nb_dispo + ",emplacement dispo=" + emp_dispo + "]";
+		return "Station [arrondissement=" + arrondissement + ",nom=" + adresse + ", numero="
+				+ numero + ",date=" + date + ",CBdispo=" + carteDispo + ", ouvert=" + ouvert + ",capacité=" + capacite + ",vélo dispo=" + nb_dispo + ",emplacement dispo=" + emp_dispo + "]";
 	}
 	
 }

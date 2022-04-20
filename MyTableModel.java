@@ -23,7 +23,7 @@ public class MyTableModel implements Initializable {
 	@FXML
 	Label date, veloDispo, nbAcces, etatStation, attachDispo, carteDispo, adresse;
 	@FXML
-	TableColumn<Station, String> numeroStation, adresseStat, nbDispoStat, ouvert;
+	TableColumn<Station, String> numeroStation, adresseStat, carteDispoStat, ouvert;
 	@FXML
 	TableView<Station> tableView;
 	
@@ -32,7 +32,7 @@ public class MyTableModel implements Initializable {
 		c = JPasserelle.getCarte();
 		numeroStation.setCellValueFactory(new PropertyValueFactory<>("numero"));
 		adresseStat.setCellValueFactory(new PropertyValueFactory<>("nom"));
-		nbDispoStat.setCellValueFactory(new PropertyValueFactory<>("dispo"));
+		carteDispoStat.setCellValueFactory(new PropertyValueFactory<>("carteDispo"));
 		ouvert.setCellValueFactory(new PropertyValueFactory<>("ouvert"));
 		
 		ObservableList<Station> list = getLesStations();
@@ -48,10 +48,10 @@ public class MyTableModel implements Initializable {
 	private void changerArr(ActionEvent e) {
 		ArrayList<Station>list_diff = new ArrayList<>();
 		list.clear();
-		RadioButton radioRep = (RadioButton) e.getSource();
+		RadioButton radioChoose = (RadioButton) e.getSource();
 		
 		for(Station s : c.getTheStations()) {
-			if(s.getArrondissement().equals(radioRep.getText())) {
+			if(s.getArrondissement().equals(radioChoose.getText())) {
 				list_diff.add(s);
 			}
 		}

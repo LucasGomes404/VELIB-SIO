@@ -12,7 +12,7 @@ public class FRMStation extends Application {
 	public void start(Stage stage) throws IOException {
 		// TODO Auto-generated method stub
 		FXMLLoader fxmlloader = new FXMLLoader(FRMStation.class.getResource("Interface.fxml"));
-		Scene scene = new Scene(fxmlloader.load(), 820, 800);
+		Scene scene = new Scene(fxmlloader.load(), 923, 731);
 		stage.setTitle("Station Vélib Paris / Île de France");
 		stage.setScene(scene);
 		stage.show();

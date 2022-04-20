@@ -79,10 +79,10 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" onAction="#changerArr" prefHeight="18.0" prefWidth="39.0" text="92" textAlignment="CENTER" GridPane.halignment="CENTER" />
-                              <RadioButton mnemonicParsing="false" onAction="#changerArr" text="93" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.vgrow="SOMETIMES" />
-                              <RadioButton mnemonicParsing="false" onAction="#changerArr" text="94" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
-                              <RadioButton mnemonicParsing="false" onAction="#changerArr" text="95" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                              <RadioButton contentDisplay="CENTER" mnemonicParsing="false" onAction="#changerArr" prefHeight="18.0" prefWidth="39.0" text="92" textAlignment="CENTER" toggleGroup="$choose" GridPane.halignment="CENTER" />
+                              <RadioButton mnemonicParsing="false" onAction="#changerArr" text="93" toggleGroup="$choose" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.vgrow="SOMETIMES" />
+                              <RadioButton mnemonicParsing="false" onAction="#changerArr" text="94" toggleGroup="$choose" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                              <RadioButton mnemonicParsing="false" onAction="#changerArr" text="95" toggleGroup="$choose" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
                            </children>
                         </GridPane>
                      </children></AnchorPane>
@@ -104,7 +104,7 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <RadioButton mnemonicParsing="false" text="Mobile" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                              <RadioButton mnemonicParsing="false" onAction="#changerArr" text="Mobile" toggleGroup="$choose" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
                      </children></AnchorPane>
@@ -124,12 +124,12 @@
             <Label id="etatStation" fx:id="etatStation" layoutX="462.0" layoutY="74.0" prefHeight="26.0" prefWidth="354.0" />
          </children>
       </Pane>
-      <TableView fx:id="tableView" prefHeight="334.0" prefWidth="923.0">
+      <TableView fx:id="tableView" onMouseClicked="#modifDispo" prefHeight="334.0" prefWidth="923.0">
         <columns>
-          <TableColumn id="numeroStation" fx:id="numeroStation" prefWidth="110.40002596378326" text="Numéro" />
-          <TableColumn id="adresseStat" fx:id="adresseStat" prefWidth="459.20003509521484" text="Adresse" />
-            <TableColumn id="nbDispoStat" fx:id="nbDispoStat" minWidth="0.0" prefWidth="192.0001220703125" text="Nombre Dispo" />
-            <TableColumn id="ouvert" fx:id="ouvert" prefWidth="162.39990234375" text="Ouvert" />
+          <TableColumn fx:id="numeroStation" prefWidth="110.40002596378326" text="Numéro" />
+          <TableColumn fx:id="adresseStat" prefWidth="459.20003509521484" text="Adresse" />
+            <TableColumn fx:id="carteDispoStat" prefWidth="192.0001220703125" text="Carte Dispo" />
+            <TableColumn fx:id="ouvert" prefWidth="162.39990234375" text="Ouvert" />
         </columns>
       </TableView>
    </children>
