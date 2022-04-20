@@ -115,7 +115,7 @@
       <Pane prefHeight="200.0" prefWidth="200.0">
          <children>
             <Label layoutX="7.0" layoutY="6.0" text="Disponibilités" />
-            <Label id="adresse" fx:id="adresse" layoutX="7.0" layoutY="34.0" prefHeight="26.0" prefWidth="370.0" textFill="#ff00b7" />
+            <Label id="adresse" fx:id="adresse" layoutX="7.0" layoutY="34.0" prefHeight="26.0" prefWidth="370.0" />
             <Label id="date" fx:id="date" layoutX="7.0" layoutY="74.0" prefHeight="26.0" prefWidth="370.0" />
             <Label id="nbAcces" fx:id="nbAcces" layoutX="7.0" layoutY="160.0" prefHeight="26.0" prefWidth="370.0" />
             <Label id="veloDispo" fx:id="veloDispo" layoutY="115.0" prefHeight="26.0" prefWidth="370.0" />

@@ -31,7 +31,7 @@ public class MyTableModel implements Initializable {
 	public void initialize(URL url, ResourceBundle resourceBundle) {
 		c = JPasserelle.getCarte();
 		numeroStation.setCellValueFactory(new PropertyValueFactory<>("numero"));
-		adresseStat.setCellValueFactory(new PropertyValueFactory<>("nom"));
+		adresseStat.setCellValueFactory(new PropertyValueFactory<>("adresse"));
 		carteDispoStat.setCellValueFactory(new PropertyValueFactory<>("carteDispo"));
 		ouvert.setCellValueFactory(new PropertyValueFactory<>("ouvert"));
 		
